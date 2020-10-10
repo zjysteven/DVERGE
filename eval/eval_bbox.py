@@ -130,7 +130,7 @@ def main():
 
     # save to file
     if args.save_to_csv:
-        output_root = os.path.join('bbox_results', train_alg, train_seed)
+        output_root = os.path.join('results', 'bbox', train_alg, train_seed)
         
         if not os.path.exists(output_root):
             os.makedirs(output_root)

@@ -50,7 +50,7 @@ def main():
     train_alg = args.model_file.split('/')[-4]
 
     # get data loaders
-    testloader = utils.get_testloader(args, train=args.trainset, batch_size=100)
+    testloader = utils.get_testloader(args, batch_size=100)
     
     # pick out samples that are correctly classified by all submodels
     correct = []
@@ -71,7 +71,7 @@ def main():
     random.seed(0)
     subset_idx = correct_idx[random.sample(range(correct_idx.size(0)), args.subset_num)].cpu()
     # use a very small batch size so that we can sample different layers multiple times
-    subset_loader = utils.get_testloader(args, train=args.trainset, batch_size=10, shuffle=True, subset_idx=subset_idx)
+    subset_loader = utils.get_testloader(args, batch_size=10, shuffle=True, subset_idx=subset_idx)
 
     eps_list = [0.07]
     steps = 10
@@ -129,7 +129,7 @@ def main():
     
     # save to file
     if args.save_to_file:
-        output_root = os.path.join('diversity_results', train_alg, train_seed)
+        output_root = os.path.join('results', 'diversity', train_alg, train_seed)
         if not os.path.exists(output_root):
             os.makedirs(output_root)
         output_filename = args.model_file.split('/')[-2]
