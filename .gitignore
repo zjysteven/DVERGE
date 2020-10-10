@@ -1,0 +1,11 @@
+data
+__pycache__
+*results
+runs
+checkpoints/*
+!checkpoints/baseline/
+!checkpoints/dverge/
+checkpoints/dverge/*
+!checkpoints/dverge/seed_0/
+!checkpoints/dverge/seed_1/
+!checkpoints/dverge/seed_2/
