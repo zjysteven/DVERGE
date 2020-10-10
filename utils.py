@@ -23,6 +23,8 @@ def get_models(args, train=True, as_ensemble=False, model_file=None, leaky_relu=
 
     if model_file:
         state_dict = torch.load(model_file)
+        if train:
+            print('Loading pre-trained models...')
     
     iter_m = state_dict.keys() if model_file else range(args.model_num)
 

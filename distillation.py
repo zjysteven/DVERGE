@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import random
 
 
 def gradient_wrt_input(model, inputs, targets, criterion=nn.CrossEntropyLoss()):
