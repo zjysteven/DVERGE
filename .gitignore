@@ -2,12 +2,4 @@ data/
 *__pycache__
 results/
 runs/
-checkpoints/*
-!checkpoints/baseline/
-checkpoints/baseline/*
-!checkpoints/baseline/seed_0/
-!checkpoints/dverge/
-checkpoints/dverge/*
-!checkpoints/dverge/seed_0/
-!checkpoints/dverge/seed_1/
-!checkpoints/dverge/seed_2/
+checkpoints/
