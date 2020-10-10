@@ -9,10 +9,9 @@ conda env create -f environment.yml
 The code is run and tested on a single TITAN Xp GPU. Running with multiple GPUs with parallelism may need adjustments.
 
 # Data and pre-trained models
-The pre-trained DVERGE models (with ResNet-20s as the architecture) are already tracked in `checkpoints/dverge`.
+The pre-trained models and generated black-box transfer adversarial examples can be accessed via [this link](https://drive.google.com/drive/folders/1i96Bk_bCWXhb7afSNp1t3woNjO1kAMDH?usp=sharing). Specifically, the pre-trained models are stored in the folder named `checkpoints`. Download and put it under this repo.
 
-
-The black-box transfer adversarial examples are uploaded via [this link](https://drive.google.com/file/d/1hL3SK9QWZVADHsCR8CcGvbopOvPe3Ylk/view?usp=sharing). Please refer to the paper for more details. Make a folder named `data` under this repo. Download the transfer adversarial examples, unzip the zip file, and put the extracted folder `transfer_adv_examples/` under `data/`. Then one can evaluate the black-box transfer robustness of ensembles.
+The black-box transfer adversarial examples (refer to the paper for more details) are stored in `transfer_adv_examples.zip`. Make a folder named `data` under this repo. Download the zip file, unzip the it, and put the extracted folder `transfer_adv_examples/` under `data/`. Then one can evaluate the black-box transfer robustness of ensembles.
 
 # Usage
 Examples of training and evaluation scripts can be found in `scripts/training.sh` and `scripts/evaluation.sh`.
