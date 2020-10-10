@@ -1,0 +1,10 @@
+name: ensemble
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - pip:
+    - torch=1.4.0
+    - torchvision=0.5.0
+    - tensorboard==2.2.0
+    - advertorch=0.2.2
