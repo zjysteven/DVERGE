@@ -2,7 +2,7 @@
 This repository contains code for reproducing our NeurIPS 2020 paper "DVERGE: Diversifying Vulnerabilities for Enhanced Robust Generation of Ensembles".
 
 # Dependencies
-Create the conda environment called `ensemble` containing all the dependencies by running
+Create the conda environment called `dverge` containing all the dependencies by running
 ```
 conda env create -f environment.yml
 ```
@@ -16,7 +16,7 @@ The black-box transfer adversarial examples (refer to the paper for more details
 # Usage
 Examples of training and evaluation scripts can be found in `scripts/training.sh` and `scripts/evaluation.sh`.
 
-Note that for now we extract models' intermediate features in a very naive way. One can implement a more robust feature extraction with the help of `forward hook` of Pytorch.
+Note that for now we extract models' intermediate features in a very naive way which may only support the ResNet20 architecture. One can implement a more robust feature extraction with the help of `forward hook` of Pytorch.
 
 # Acknowledgement
 The training code of [ADP](https://arxiv.org/pdf/1901.08846.pdf) (Adaptive Diversity Promoting Regularizer) is adapted from [the official repo](https://github.com/P2333/Adaptive-Diversity-Promoting), which is originally written in TensorFlow and we turned it into Pytorch here.
