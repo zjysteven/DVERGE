@@ -146,7 +146,7 @@ def main():
     assert torch.cuda.is_available()
 
     # set up writer, logger, and save directory for models
-    save_root = os.path.join('checkpoints', 'seed_{:d}'.format(args.seed), 'adv_training', '{:d}_{:s}{:d}_eps_{:.3f}'.format(args.model_num, args.arch, args.depth, args.eps))
+    save_root = os.path.join('checkpoints', 'seed_{:d}'.format(args.seed), 'advt', '{:d}_{:s}{:d}_eps_{:.3f}'.format(args.model_num, args.arch, args.depth, args.eps))
     if not os.path.exists(save_root):
         os.makedirs(save_root)
     else:
