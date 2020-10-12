@@ -9,7 +9,7 @@ conda env create -f environment.yml
 The code is run and tested on a single TITAN Xp GPU. Running on multiple GPUs with parallelism may need adjustments.
 
 # Data and pre-trained models
-The pre-trained models and generated black-box transfer adversarial examples can be accessed via [this link](https://drive.google.com/drive/folders/1i96Bk_bCWXhb7afSNp1t3woNjO1kAMDH?usp=sharing). Specifically, the pre-trained models are stored in the folder named `checkpoints`. Download and put it under this repo.
+The pre-trained models and generated black-box transfer adversarial examples can be accessed via [this link](https://drive.google.com/drive/folders/1i96Bk_bCWXhb7afSNp1t3woNjO1kAMDH?usp=sharing). Specifically, the pre-trained models are stored in the folder named `checkpoints`. Download and put `checkpoints` under this repo.
 
 The black-box transfer adversarial examples (refer to the paper for more details) are stored in `transfer_adv_examples.zip`. Make a folder named `data` under this repo. Download the zip file, unzip the it, and put the extracted folder `transfer_adv_examples/` under `data/`. Then one can evaluate the black-box transfer robustness of ensembles.
 
