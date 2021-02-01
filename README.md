@@ -6,6 +6,7 @@ Create the conda environment called `dverge` containing all the dependencies by 
 ```
 conda env create -f environment.yml
 ```
+We were using PyTorch 1.4.0 for all the experiments. You may want to install other versions of PyTorch according to the cuda version of your computer/server.
 The code is run and tested on a single TITAN Xp GPU. Running on multiple GPUs with parallelism may need adjustments.
 
 # Data and pre-trained models
