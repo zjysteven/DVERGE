@@ -21,5 +21,17 @@ Note that for now we extract models' intermediate features in a very naive way w
 
 Also, you may observe a high variation in results when training DVERGE, which we suspect is due to the random layer sampling for distillation. Please refer to **Appendix C.5** of the paper for a discussion on the layer effects.
 
+# Reference
+If you find our paper/this repo useful for your research, please consider citing our work.
+```
+@article{yang2020dverge,
+  title={DVERGE: Diversifying Vulnerabilities for Enhanced Robust Generation of Ensembles},
+  author={Yang, Huanrui and Zhang, Jingyang and Dong, Hongliang and Inkawhich, Nathan and Gardner, Andrew and Touchet, Andrew and Wilkes, Wesley and Berry, Heath and Li, Hai},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}
+```
+
 # Acknowledgement
 The training code of [ADP](https://arxiv.org/pdf/1901.08846.pdf) (Adaptive Diversity Promoting Regularizer) is adapted from [the official repo](https://github.com/P2333/Adaptive-Diversity-Promoting), which is originally written in TensorFlow and we turned it into Pytorch here.
