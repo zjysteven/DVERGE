@@ -1,5 +1,5 @@
 # DVERGE
-This repository contains code for reproducing our NeurIPS 2020 paper ["DVERGE: Diversifying Vulnerabilities for Enhanced Robust Generation of Ensembles"](https://papers.nips.cc/paper/2020/hash/3ad7c2ebb96fcba7cda0cf54a2e802f5-Abstract.html).
+This repository contains code for reproducing our NeurIPS 2020 **Oral** paper ["DVERGE: Diversifying Vulnerabilities for Enhanced Robust Generation of Ensembles"](https://papers.nips.cc/paper/2020/hash/3ad7c2ebb96fcba7cda0cf54a2e802f5-Abstract.html).
 
 # Dependencies
 Create the conda environment called `dverge` containing all the dependencies by running
